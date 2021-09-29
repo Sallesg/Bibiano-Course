@@ -1,0 +1,26 @@
+.post {
+  padding: 20px;
+  margin: 20px;
+
+  background-color: #fafafa;
+
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title > p {
+  font-size: 1.3rem;
+  margin: 0 0 0 10px;
+}
+
+img { 
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
