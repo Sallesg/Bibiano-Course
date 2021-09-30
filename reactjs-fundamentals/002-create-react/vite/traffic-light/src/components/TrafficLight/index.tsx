@@ -6,38 +6,35 @@ export const TrafficLight = () => {
 
   const colorLight = [
     {
+      id: '1',
       background: 'red',
       message: 'Watch out! wait for the signal to open',
-      setMessage: () => {
-        setActive(colorLight[0].message)
-      }
     },
     {
+      id: '2',
       background: 'yellow',
       message: 'Attention! Is about to turn red',
-      setMessage: () => {
-        setActive(colorLight[1].message)
-      }
     },
     {
+      id: '3',
       background: 'green',
       message: 'You can pass!',
-      setMessage: () => {
-        setActive(colorLight[2].message)
-      }
     },
   ]
 
   return (
     <>
       <div className="wrapper-traffic-light">
-        {colorLight.map(({background, setMessage }, index ) => (
+        {colorLight.map(({id, background }, index ) => (
           <div key={index} className="container">
-            <button onClick={setMessage} style={{background}}></button>
+            <button onClick={() => setActive(id)} style={{background}}></button>
           </div>
         ))}
       </div>
-      <p>{active}</p>
+      {colorLight.find((item) => {
+        return item.id === active
+        })?.message
+      }
     </>
   )
 }

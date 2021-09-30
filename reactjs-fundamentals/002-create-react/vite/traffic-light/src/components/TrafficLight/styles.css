@@ -12,9 +12,6 @@
   border-radius: 12px;
 }
 
-.container {
-}
-
 button {
   border-radius: 50%;
   width: 50px;
@@ -26,8 +23,4 @@ button {
 
 button:hover {
   filter: brightness(75%);
-}
-
-p {
-  color: rgb(230, 220, 220);
 }
