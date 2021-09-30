@@ -1,0 +1,51 @@
+.container { 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #353b3c;
+
+  color: #eef0f2;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  background-color: #a2999e;
+  padding: 20px;
+  margin: 20px;
+
+  border-radius: 20px;
+}
+
+.traffic-light > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.traffic-light > button.selected {
+  transform: scale(1.2)
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.info > span {
+  font-size: 1.5rem;
+}
